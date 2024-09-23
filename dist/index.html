@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+    <!-- css file -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/assets/donation-B0a1EbX8.png" type="image/x-icon" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- lottie cdn -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-5V8PSUig.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header class="shadow-lg shadow-slate-200 bg-white sticky top-0 mb-8">
+      <section class="bg-green-500 py-6">
+        <nav class="center flex flex-col">
+          <!-- dekstop nav -->
+          <div class="flex justify-between items-center mt-6 md:mt-0 order-7">
+            <div>
+              <button
+                class="btn button bg-green-600 border-2 border-green-300 rounded-lg text-white hover:bg-green-700 hover:text-white hover:border-green-300"
+              >
+                <i class="fa-solid fa-blog"></i>
+                Blogs
+              </button>
+            </div>
+
+            <div class="hidden md:block">
+              <div class="flex items-center justify-center gap-4">
+                <img
+                  class="h-9"
+                  src="/assets/donation-B0a1EbX8.png"
+                  alt="donation image"
+                />
+                <h1 class="text-xl md:text-3xl font-bold text-white font-inter">
+                  Donate Bangladesh
+                </h1>
+              </div>
+            </div>
+
+            <!-- total tk -->
+            <div
+              class="font-inter text-lg md:text-xl flex items-center justify-end gap-2 bg-lime-200 px-8 py-1 rounded-full font-semibold relative text-green-900"
+            >
+              <img
+                class="h-10 md:h-12 absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2"
+                src="/assets/coin-CQhWBAM3.png"
+                alt="tk icon"
+              />
+              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+              <p id="balance">400</p>
+            </div>
+          </div>
+
+          <!-- mobile nav -->
+          <div class="md:hidden order-4">
+            <div class="flex items-center justify-center gap-4">
+              <img class="h-9" src="/assets/donation-B0a1EbX8.png" alt="donation image" />
+              <h1 class="text-2xl md:text-3xl font-bold text-white font-inter">
+                Donate Bangladesh
+              </h1>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <!-- toggle buttons -->
+      <section
+        class="center bg-white flex justify-center text-lg md:text-xl font-semibold font-poppins"
+      >
+        <div
+          id="toogle-btn-donation"
+          class="w-52 text-center py-4 md:py-6 after:content-[''] after:w-full after:h-1 after:bg-green-500 after:block relative after:absolute after:bottom-0 after:right-full after:hover:right-0 after:transition-all after:duration-300 duration-300 cursor-pointer overflow-hidden hover:text-green-600 selected text-green-600 selected"
+        >
+          <h1>Donation</h1>
+        </div>
+        <div
+          id="toogle-btn-history"
+          class="w-52 text-center py-4 md:py-6 after:content-[''] after:w-full after:h-1 after:bg-green-500 after:block relative after:absolute after:bottom-0 after:right-full after:hover:right-0 after:transition-all after:duration-300 duration-300 cursor-pointer overflow-hidden hover:text-green-600"
+        >
+          <h1>History</h1>
+        </div>
+      </section>
+    </header>
+
+    <main class="center">
+      <!-- donation section -->
+      <section id="donation" class="space-y-8">
+        <!-- noakali -->
+        <div class="p-6 border-2 rounded-3xl md:flex gap-8">
+          <div class="md:w-1/2">
+            <img
+              class="w-full h-full object-cover rounded-xl"
+              src="/assets/feni-7J5bcV95.png"
+              alt=""
+            />
+          </div>
+          <div class="md:w-1/2 flex flex-col justify-between">
+            <div>
+              <!-- total donated amount -->
+              <div>
+                <button
+                  class="flex justify-center items-center text-base gap-2 pl-2 pr-6 py-2 rounded-full bg-green-100 font-inter font-semibold text-green-700"
+                >
+                  <img
+                    class="h-7"
+                    src="/assets/give-love-DYNs4CxT.png"
+                    alt="donate icon"
+                  />
+                  <p><span id="noakali-donation">45987</span> BDT</p>
+                </button>
+              </div>
+              <!-- place section -->
+              <div class="space-y-4 mt-4">
+                <h1 id="noakali-title" class="title">
+                  Donate for Flood Relief in Noakhali,Bangladesh
+                </h1>
+                <p class="para line-clamp-5 md:line-clamp-none">
+                  The recent floods in Noakhali have devastated local
+                  communities, leading to severe disruption and loss. Your
+                  generous donation will help provide immediate aid, including
+                  food, clean water, and medical supplies, to those affected by
+                  this calamity. Together, we can offer crucial support and help
+                  rebuild lives in the aftermath of this disaster. Every
+                  contribution counts towards making a real difference. Please
+                  consider donating today to assist those in urgent need.
+                </p>
+              </div>
+            </div>
+
+            <!-- donation form -->
+            <div class="mt-6">
+              <form action="#">
+                <input
+                  id="noakali-field"
+                  class="text-base p-4 outline-none border-2 rounded-xl w-full font-lexend font-light"
+                  type="text"
+                  placeholder="Write Donation Amount"
+                />
+                <input
+                  id="btn-noakali"
+                  class="font-base font-bold font-inter button-card w-full bg-green-600 hover:bg-green-500 rounded-xl text-white mt-4 cursor-pointer"
+                  type="submit"
+                  value="Donate Now"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feni -->
+        <div class="p-6 border-2 rounded-3xl md:flex gap-8">
+          <div class="md:w-1/2">
+            <img
+              class="w-full h-full object-cover rounded-xl"
+              src="/assets/noakhali-Dl9CwpTY.png"
+              alt=""
+            />
+          </div>
+          <div class="md:w-1/2 flex flex-col justify-between">
+            <div>
+              <!-- total donated amount -->
+              <div>
+                <button
+                  class="flex justify-center items-center text-base gap-2 pl-2 pr-6 py-2 rounded-full bg-green-100 font-inter font-semibold text-green-700"
+                >
+                  <img
+                    class="h-7"
+                    src="/assets/give-love-DYNs4CxT.png"
+                    alt="donate icon"
+                  />
+                  <p><span id="feni-donation">98734</span> BDT</p>
+                </button>
+              </div>
+              <!-- place section -->
+              <div class="space-y-4 mt-4">
+                <h1 id="feni-title" class="title">
+                  Donate for Flood at Feni, Bangladesh
+                </h1>
+                <p class="para line-clamp-5 md:line-clamp-none">
+                  The recent floods in Feni have caused significant damage to
+                  homes infrastructure. Your donation will help provide
+                  essential supplies and to those affected by this disaster.
+                  Every contribution, big or small, makes difference. Please
+                  join us in supporting the relief efforts and making a positive
+                  impact on the lives of those in need.
+                </p>
+              </div>
+            </div>
+
+            <!-- donation form -->
+            <div class="mt-6">
+              <form action="#">
+                <input
+                  id="feni-field"
+                  class="text-base p-4 outline-none border-2 rounded-xl w-full font-lexend font-light"
+                  type="text"
+                  placeholder="Write Donation Amount"
+                />
+                <input
+                  id="btn-feni"
+                  class="cursor-pointer font-base font-bold font-inter button-card w-full bg-green-600 hover:bg-green-500 rounded-xl text-white mt-4"
+                  type="submit"
+                  value="Donate Now"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Quota -->
+        <div class="p-6 border-2 rounded-3xl flex flex-col md:flex-row gap-8">
+          <div class="md:w-1/2">
+            <img
+              class="w-full h-full object-cover rounded-xl"
+              src="/assets/quota-protest-DItmrrCq.png"
+              alt=""
+            />
+          </div>
+          <div class="md:w-1/2 flex flex-col justify-between">
+            <div>
+              <!-- total donated amount -->
+              <div>
+                <button
+                  class="flex justify-center items-center text-base gap-2 pl-2 pr-6 py-2 rounded-full bg-green-100 font-inter font-semibold text-green-700"
+                >
+                  <img
+                    class="h-7"
+                    src="/assets/give-love-DYNs4CxT.png"
+                    alt="donate icon"
+                  />
+                  <p><span id="quota-total-donation">9540</span> BDT</p>
+                </button>
+              </div>
+              <!-- place section -->
+              <div class="space-y-4 mt-4">
+                <h1 id="qouta-title" class="title">
+                  Aid for Injured in the Quota Movement
+                </h1>
+                <p class="para line-clamp-5 md:line-clamp-none">
+                  The recent Quota movement has resulted in numerous injuries
+                  and significant hardship for many individuals. Your support is
+                  crucial in providing medical assistance, rehabilitation, and
+                  necessary supplies to those affected. By contributing, you
+                  help ensure that injured individuals receive the care and
+                  support they need during this challenging time. Every donation
+                  plays a vital role in alleviating their suffering and aiding
+                  in their recovery. Please consider making a donation to
+                  support these brave individuals in their time of need.
+                </p>
+              </div>
+            </div>
+
+            <!-- donation form -->
+            <div class="mt-6">
+              <form action="#">
+                <input
+                  id="quota-field"
+                  class="text-base p-4 outline-none border-2 rounded-xl w-full font-lexend font-light"
+                  type="text"
+                  placeholder="Write Donation Amount"
+                  required
+                />
+                <input
+                  id="btn-qoutaMovement"
+                  class="cursor-pointer font-base font-bold font-inter button-card w-full bg-green-600 hover:bg-green-500 rounded-xl text-white mt-4"
+                  type="submit"
+                  value="Donate Now"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- history section  -->
+      <section id="history" class="space-y-6 hidden">
+        <h1 class="text-lg font-semibold text-green-800">
+          Your Donation history
+        </h1>
+      </section>
+    </main>
+
+    <!-- modals -->
+    <section>
+      <!-- error message -->
+      <div
+        id="error-modal"
+        class="h-svh w-screen fixed top-0 left-0 bg-[#00000087] flex items-center justify-center hidden"
+      >
+        <div
+          class="w-10/12 lg:w-3/12 pt-5 text-center space-y-2 h-[30%] grid grid-rows-6 bg-white shadow-sm shadow-black rounded-xl relative"
+        >
+          <img
+            class="h-[80px] md:h-[100px] absolute border-4 border-white rounded-full bg-white bottom-full left-1/2 -translate-x-1/2 translate-y-1/2"
+            src="/assets/road-B3DsJQNB.png"
+            alt="decision make"
+          />
+          <div
+            class="row-span-4 flex items-center flex-col justify-center space-y-4"
+          >
+            <h1
+              id="modal-title"
+              class="text-xl font-bold text-black font-lexend"
+            >
+              Title
+            </h1>
+            <p id="modal-msg" class="text-base font-lexend w-3/4 mx-auto">
+              Message
+            </p>
+          </div>
+          <div class="row-span-2">
+            <button
+              onclick="dismiss()"
+              class="text-lg h-full font-semibold font-poppins bg-red-500 text-white w-full rounded-br-xl rounded-bl-xl"
+            >
+              DISMISS
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- success modal -->
+      <div
+        id="success-modal"
+        class="h-svh w-screen fixed top-0 left-0 bg-[#00000087] flex items-center justify-center hidden"
+      >
+        <div
+          class="w-11/12 lg:w-3/12 p-6 text-center space-y-2 bg-white shadow-sm shadow-black rounded-xl font-lexend"
+        >
+          <div class="-translate-y-2">
+            <lottie-player
+              id="success-animation"
+              src="https://lottie.host/8490f1ec-489c-4a1e-be6e-02744b6dce13/U0n66kiyu2.json"
+              background="transparent"
+              speed="1"
+              style="width: 100%; height: 150px"
+              direction="1"
+              mode="normal"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+          <div class="-translate-y-6 space-y-6">
+            <h1 class="text-4xl font-bold text-black font-lexend">
+              Congrates!
+            </h1>
+            <p id="success-msg" class="text-xl font-lexend mx-auto">
+              You have successfully donated for noakali
+            </p>
+          </div>
+          <div>
+            <button
+              onclick="successDismiss()"
+              class="btn px-12 bg-green-500 text-xl font-bold text-white py-2 rounded-2xl hover:bg-green-600 border-none"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
