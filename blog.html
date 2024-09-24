@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="style/index.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/donation.png" type="image/x-icon" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- lottie cdn -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="shadow-lg shadow-slate-200 bg-white sticky top-0 mb-8">
+      <section class="bg-green-500 py-6">
+        <nav class="center flex flex-col">
+          <!-- dekstop nav -->
+          <div class="flex justify-between items-center mt-6 md:mt-0 order-7">
+            <div>
+              <button
+                onclick="document.location.href = 'index.html'"
+                class="btn button bg-green-600 border-2 border-green-300 rounded-lg text-white hover:bg-green-700 hover:text-white hover:border-green-300"
+              >
+                <i class="fa-solid fa-blog"></i>
+                Home
+              </button>
+            </div>
+
+            <div class="hidden md:block">
+              <div class="flex items-center justify-center gap-4">
+                <img
+                  class="h-9"
+                  src="assets/donation.png"
+                  alt="donation image"
+                />
+                <h1 class="text-xl md:text-3xl font-bold text-white font-inter">
+                  Donate Bangladesh
+                </h1>
+              </div>
+            </div>
+
+            <!-- total tk -->
+            <div
+              class="font-inter text-lg md:text-xl flex items-center justify-end gap-2 bg-lime-200 px-8 py-1 rounded-full font-semibold relative text-green-900"
+            >
+              <img
+                class="h-10 md:h-12 absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2"
+                src="assets/coin.png"
+                alt="tk icon"
+              />
+              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+              <p id="balance">400</p>
+            </div>
+          </div>
+
+          <!-- mobile nav -->
+          <div class="md:hidden order-4">
+            <div class="flex items-center justify-center gap-4">
+              <img class="h-9" src="assets/donation.png" alt="donation image" />
+              <h1 class="text-2xl md:text-3xl font-bold text-white font-inter">
+                Donate Bangladesh
+              </h1>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+
+    <main class="center">
+      <div class="space-y-2">
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Module (DOM)
+          </div>
+          <div class="collapse-content">
+            <p>
+              Document Object Module is used to manipulate html elements using
+              javaScript. We can select an element and change it whenever we
+              need. Also we can create a new element. In one word I understand
+              that, DOM is they only way to play with HTML element and it
+              represents the html element to javascript like an object.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              There are 5 way to select element from DOM like, querySelector()
+              querySelectorALl() getElementById() getElementsByClassName() and
+              the last one is getElelmentsByTagName(). I can easily select an
+              element with this methods.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
