@@ -28,12 +28,24 @@ const btnFeniDonation = document.getElementById("btn-feniDonation");
 
 // change the toggle style on click
 function changeTogleStyle(id) {
+  const classes = [
+    "after:content-['']",
+    "before:w-full",
+    "after:h-1",
+    "after:bg-green-500",
+    "after:block",
+    "after:bottom-0",
+    "after:left-0",
+    "text-green-600",
+  ];
   const donation = document.getElementById("toogle-btn-donation");
   const history = document.getElementById("toogle-btn-history");
-  donation.classList.remove("selected", "text-green-600");
-  history.classList.remove("selected", "text-green-600");
 
-  id.classList.add("selected", "text-green-600");
+  for (let cls of classes) {
+    donation.classList.remove(cls);
+    history.classList.remove(cls);
+    id.classList.add(cls);
+  }
 }
 
 // modals
