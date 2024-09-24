@@ -90,11 +90,8 @@ function createTransaction(amount, campaign) {
             <h1 id="hist-title" class="text-lg font-semibold font-lexend">
               ${campaign}
             </h1>
-            <p id="hist-time" class="text-paraColor"> Date: ${date.getDate()}
-              ${months[date.getMonth()]}
-              ${date.getFullYear()}
-              ${date.getUTCHours()}
-            :${date.getUTCMinutes()}:${date.getUTCSeconds()} </p>
+            <p id="hist-time" class="text-paraColor"> Date: 
+              ${date} </p>
           </div>
           <div
             class="col-span-1 text-xl font-bold text-red-500 flex gap-2 justify-center items-center"
@@ -144,6 +141,7 @@ function validateDonation(id, inputID, title) {
         balance.innerText = totalBalance.toFixed(2);
         createTransaction(input, title.innerText);
         showSuccessModal(title.innerText);
+        inputID.value = "";
       }
     }
   }
